@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static final Scanner input = new Scanner(System.in);
+    static final Scanner INPUT = new Scanner(System.in);
     static final List<Integer> FLOORS = new ArrayList<>(List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15));
     public static void main(String[] args) throws InterruptedException {
         int menu;
@@ -16,7 +16,7 @@ public class Main {
             Indicate if you want to use the elevator:
             1. Yes
             2. No""");
-            menu = input.nextInt();
+            menu = INPUT.nextInt();
             switch (menu) {
                 case 1 -> userInputs();
                 case 2 -> System.out.println("Have a nice day!");
@@ -33,10 +33,10 @@ public class Main {
 
         do {
             System.out.println("Please, indicate the floor you are on:");
-            initialFloor = input.nextInt();
+            initialFloor = INPUT.nextInt();
             if (FLOORS.contains(initialFloor)) {
                 System.out.println("Indicate the floor you want to go to:");
-                finalFloor = input.nextInt();
+                finalFloor = INPUT.nextInt();
                 if (FLOORS.contains(finalFloor)) {
                     System.out.println("You are in floor... " + initialFloor);
                     Thread.sleep(1500);
@@ -67,11 +67,11 @@ public class Main {
 
         System.out.println("CLOSING THE DOOR...");
         Thread.sleep(1500);
-        System.out.println("You have travelled... ");
+        System.out.println("You have travelled...");
         Thread.sleep(1500);
         System.out.println(trip + " floor/s");
         Thread.sleep(1500);
-        System.out.println("OPENING THE DOOR");
+        System.out.println("OPENING THE DOOR...");
 
     }
 
