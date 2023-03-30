@@ -1,0 +1,3 @@
+
+C
+src/kata8/Main.java,a\e\ae81f919aa487b0c42329ef28274191710290308
